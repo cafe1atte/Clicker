@@ -1,7 +1,7 @@
 let cookies = 0;
 
 const countDisplay = document.getElementById("count");
-const cookie = document.getElementById("cookie");
+const cookie = document.getElementById("kyomui");
 
 cookie.addEventListener("click", () => {
     cookies++;
