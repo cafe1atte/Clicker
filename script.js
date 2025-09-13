@@ -1,4 +1,4 @@
-let health = 100;
+let health = 10;
 let level = 1;
 let kills = {};
 
@@ -29,7 +29,7 @@ function saveData() {
 
 
 function updateHealth() {
-    levelText.textContent = `Level ${level} (${kills[level.toString()]} Kills)`;
+    levelText.textContent = `Level ${level} (${kills[level.toString()] ?? "0"} Kills)`;
     healthText.textContent = `${health} / ${level * 10}`;
     healthFill.style.width = `${(health / (level * 10)) * 100}%`;
     saveData();
