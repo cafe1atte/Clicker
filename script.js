@@ -38,8 +38,11 @@ function updateHealth() {
 kyomui.addEventListener("click", () => {
     health--;
     if (health <= 0) {
-        health = level * 10;
+        if (!kills[level.toString()]) {
+            kills[level.toString()] = 0;
+        }
         kills[level.toString()] += 1;
+        health = level * 10;
     }
     updateHealth();
 });
