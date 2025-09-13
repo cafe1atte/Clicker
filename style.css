@@ -1,0 +1,45 @@
+img {
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#level {
+    font-size: 2em;
+}
+
+#kyomui {
+    width: 200px;
+    cursor: pointer;
+}
+
+#health-bar {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    background-color: #ddd;
+    border: 2px solid #333;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+#health-fill {
+    height: 100%;
+    width: 100%;
+    background-color: #4caf50; /* 緑 */
+    border-radius: 6px 0 0 6px;
+    transition: width 0.2s;
+}
+
+#health-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    color: #000;
+}
